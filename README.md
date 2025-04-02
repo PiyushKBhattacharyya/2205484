@@ -53,30 +53,9 @@ Run the development server:
 npm run dev
 ```
 
-#### Production Mode
-Build and run the application in production mode:
-```
-npm run build
-npm run dev
-```
-
 The application will be available at:
 - **Application**: http://localhost:3000
 - **Backend API**: http://localhost:3000/api
-
-### Deployment
-
-To deploy this application to a production environment:
-
-1. Clone the repository on your server
-2. Install dependencies: `npm install --production`
-3. Create a `.env` file with your production settings
-4. Build the application: `npm run build`
-5. Start the server: `npm start` or use a process manager like PM2:
-   ```
-   npm install -g pm2
-   pm2 start dist/index.js
-   ```
 
 ## API Integration
 
