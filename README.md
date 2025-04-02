@@ -5,7 +5,7 @@ A full-stack React and Express application that provides real-time insights into
 ## Features
 
 - **Dashboard Analytics**: Visualize platform metrics and key performance indicators
-- **Feed Views**: Browse latest posts with intelligent sorting options and "Load More" functionality
+- **Feed Views**: Browse latest posts with intelligent sorting options
 - **Trending Content**: Discover popular and fastest-growing content
 - **Top Users**: See the most active users on the platform
 - **User Details**: View detailed user profiles with their posts
@@ -35,7 +35,7 @@ A full-stack React and Express application that provides real-time insights into
 1. Clone the repository
 2. Install dependencies:
    ```
-   npm install
+   npm install --force
    ```
 3. Create a `.env` file with the following variables:
    ```
@@ -76,17 +76,6 @@ To deploy this application to a production environment:
    ```
    npm install -g pm2
    pm2 start dist/index.js
-   ```
-
-For containerized deployment with Docker:
-
-1. Build the Docker image:
-   ```
-   docker build -t social-analytics .
-   ```
-2. Run the container:
-   ```
-   docker run -p 5000:5000 --env-file .env social-analytics
    ```
 
 ## API Integration
